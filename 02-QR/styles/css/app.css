@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 100%;
+  font-family: "Outfit", sans-serif;
+  color: black;
+  background-color: hsl(220deg, 15%, 55%);
+  line-height: 1.4em;
+}
+
+img,
+picture,
+video,
+iframe,
+figure {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+p a {
+  display: inline;
+}
+
+li {
+  list-style: none;
+}
+
+::selection {
+  background-color: hsl(218deg, 44%, 22%);
+  color: hsl(220deg, 15%, 55%);
+}
+
+svg {
+  width: 100%;
+  display: block;
+  fill: currentColor;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  color: black;
+  font-family: "Outfit", sans-serif;
+  font-weight: 800;
+}
+
+p {
+  font-size: 15px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  border-radius: 1.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  color: black;
+  background: #1b2430;
+  border: 1px solid black;
+}
+
+.container {
+  width: calc(100% - 2rem);
+  max-width: 1200px;
+  margin: auto;
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.header {
+  background-color: #1b2430;
+}
+.header nav {
+  display: flex;
+}
+.header nav a {
+  color: white;
+  padding: 20px;
+}
+
+.card {
+  background-color: #fff;
+  height: 550px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 350px;
+  padding: 15px;
+}
+@media screen and (max-width: 350px) {
+  .card {
+    width: 320px;
+  }
+}
+.card .card__img {
+  width: 320px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+@media screen and (max-width: 350px) {
+  .card .card__img {
+    width: 300px;
+  }
+}
+.card h1,
+.card p {
+  text-align: center;
+}
+.card h1 {
+  font-size: 25px;
+  line-height: 30px;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=app.css.map */

@@ -1,0 +1,45 @@
+@use "../base/tools" as t;
+@use "../base/variables" as v;
+@use "../mixins/mixins" as m;
+
+.card {
+  background-color: v.$white;
+  height: 550px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 350px;
+  padding: 15px;
+
+  @media screen and (max-width: 350px) {
+    width: 320px;
+  }
+
+  .card__img {
+    width: 320px;
+    border-radius: 20px;
+    overflow: hidden;
+
+    @media screen and (max-width: 350px) {
+      width: 300px;
+    }
+  }
+
+  h1,
+  p {
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
