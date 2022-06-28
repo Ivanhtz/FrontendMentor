@@ -21,7 +21,7 @@ body {
   font-size: 100%;
   font-family: $text-font;
   color: $text-color;
-  background-color: $main-color;
+  background-color: rgb(13, 26, 45);
   line-height: 1.4em;
 }
 
@@ -71,4 +71,8 @@ h6 {
   color: $title-color;
   font-family: $title-font;
   font-weight: 800;
+}
+
+p {
+  font-size: 18px;
 }

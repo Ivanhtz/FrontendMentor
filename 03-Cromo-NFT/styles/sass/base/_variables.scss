@@ -1,18 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,600;0,700;1,600&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,300&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
 // Colors
-$main-color: #d6d5a8;
-$secondary-color: #51557e;
-$third-color: #1b2430;
-$special-color: #816797;
-$black: #000;
+$main-color: hsl(215, 51%, 70%);
+$secondary-color: hsl(178, 100%, 50%);
+$third-color: hsl(217, 54%, 11%);
+$special-color: hsl(216, 50%, 16%);
+$black: hsl(215, 32%, 27%);
 $white: #fff;
 $grey: rgb(136, 134, 134);
 $title-color: black;
 $text-color: black;
 
 // Fonts
-$title-font: "Kodchasan", sans-serif;
-$text-font: "Roboto", sans-serif;
+$title-font: "Outfit", sans-serif;
+$text-font: "Outfit", sans-serif;
 
 // Responsive

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,600;0,700;1,600&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -20,9 +20,9 @@ html {
 body {
   min-height: 100vh;
   font-size: 100%;
-  font-family: "Roboto", sans-serif;
+  font-family: "Outfit", sans-serif;
   color: black;
-  background-color: #d6d5a8;
+  background-color: rgb(13, 26, 45);
   line-height: 1.4em;
 }
 
@@ -52,8 +52,8 @@ li {
 }
 
 ::selection {
-  background-color: #d6d5a8;
-  color: #51557e;
+  background-color: hsl(215deg, 51%, 70%);
+  color: hsl(178deg, 100%, 50%);
 }
 
 svg {
@@ -70,8 +70,12 @@ h5,
 h6 {
   margin-top: 0;
   color: black;
-  font-family: "Kodchasan", sans-serif;
+  font-family: "Outfit", sans-serif;
   font-weight: 800;
+}
+
+p {
+  font-size: 18px;
 }
 
 .btn {
@@ -81,7 +85,7 @@ h6 {
   text-decoration: none;
   font-weight: 600;
   color: black;
-  background: #1b2430;
+  background: hsl(217deg, 54%, 11%);
   border: 1px solid black;
 }
 
@@ -99,7 +103,7 @@ h6 {
   }
 }
 .header {
-  background-color: #1b2430;
+  background-color: hsl(217deg, 54%, 11%);
 }
 .header nav {
   display: flex;
@@ -107,6 +111,137 @@ h6 {
 .header nav a {
   color: white;
   padding: 20px;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.card__nft {
+  width: 380px;
+  min-height: 590px;
+  background-color: rgb(21, 39, 63);
+  padding: 10px 0;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 5px 5px 5px black;
+}
+@media screen and (max-width: 376px) {
+  .card__nft {
+    width: 330px;
+  }
+}
+.card__nft .card__nft--title {
+  font-size: 1.3rem;
+  color: #fff;
+  width: 75%;
+}
+.card__nft .card__nft--title:hover {
+  cursor: pointer;
+}
+.card__nft .card__nft--title:active {
+  color: hsl(178deg, 100%, 50%);
+}
+.card__nft .card__nft--paragraph {
+  color: rgb(136, 134, 134);
+  width: 75%;
+}
+.card__nft .card__nft--icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 75%;
+}
+.card__nft .text__blue {
+  color: hsl(178deg, 100%, 50%);
+}
+.card__nft .text__blue span {
+  display: flex;
+  align-items: center;
+  gap: 0 7px;
+}
+.card__nft .text__gray {
+  color: rgb(136, 134, 134);
+  margin-left: 10px;
+}
+.card__nft .text__gray span {
+  display: flex;
+  align-items: center;
+  gap: 0 7px;
+}
+.card__nft .text__gray span img {
+  width: 20px;
+}
+.card__nft .card__nft--img {
+  width: 75%;
+  overflow: hidden;
+  border-radius: 10px;
+  position: relative;
+}
+.card__nft .card__nft--img .filter__header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.card__nft .card__nft--img .filter__header:hover {
+  cursor: pointer;
+}
+.card__nft .card__nft--img .filter__header:active {
+  background-color: rgba(0, 255, 255, 0.493);
+}
+.card__nft span img {
+  width: 15px;
+  display: inline;
+}
+.card__nft .card__footer {
+  display: flex;
+  align-items: center;
+  width: 75%;
+  gap: 10px;
+  position: relative;
+}
+.card__nft .card__footer::before {
+  content: "";
+  background-color: rgb(136, 134, 134);
+  width: 300px;
+  height: 1px;
+  position: absolute;
+  bottom: 50px;
+}
+@media screen and (max-width: 376px) {
+  .card__nft .card__footer::before {
+    width: 250px;
+  }
+}
+.card__nft .card__footer p {
+  font-size: 0.9rem;
+  color: rgb(136, 134, 134);
+}
+.card__nft .card__footer p span {
+  margin-left: 4px;
+}
+.card__nft .card__footer .footer__img {
+  width: 37px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.card__nft .card__footer .text__white {
+  color: #fff;
+}
+.card__nft .card__footer .text__white:hover {
+  cursor: pointer;
+}
+.card__nft .card__footer .text__white:active {
+  color: hsl(178deg, 100%, 50%);
 }
 
 /*# sourceMappingURL=app.css.map */
