@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 100%;
+  font-family: "Overpass", sans-serif;
+  color: black;
+  background-color: hsl(216deg, 12%, 8%);
+  line-height: 1.4em;
+}
+
+img,
+picture,
+video,
+iframe,
+figure {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+p a {
+  display: inline;
+}
+
+li {
+  list-style: none;
+}
+
+::selection {
+  background-color: hsl(216deg, 12%, 8%);
+  color: #51557e;
+}
+
+svg {
+  width: 100%;
+  display: block;
+  fill: currentColor;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  color: black;
+  font-family: "Overpass", sans-serif;
+  font-weight: 800;
+}
+
+p {
+  font-size: 15px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  border-radius: 1.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  color: black;
+  background: #1b2430;
+  border: 1px solid black;
+}
+
+.container {
+  width: calc(100% - 2rem);
+  max-width: 1200px;
+  margin: auto;
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.header {
+  background-color: #1b2430;
+}
+.header nav {
+  display: flex;
+}
+.header nav a {
+  color: white;
+  padding: 20px;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background-color: rgb(33, 40, 50);
+  width: 450px;
+  height: 450px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px 0;
+  z-index: 2;
+}
+.card .icono {
+  width: 80%;
+}
+.card .card__icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(40, 46, 54);
+  padding: 10px;
+}
+.card .card__title {
+  color: #fff;
+  width: 80%;
+}
+.card .card__paragraph {
+  color: rgb(106, 113, 123);
+  width: 80%;
+}
+.card .card__score {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 85%;
+}
+.card .card__score .score {
+  width: 60px;
+  height: 60px;
+  background-color: rgb(40, 46, 54);
+  color: rgb(106, 113, 123);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+.card .card__score .score:hover {
+  background-color: hsl(217deg, 12%, 63%);
+  color: #fff;
+  cursor: pointer;
+}
+.card .card__score .score:active {
+  background-color: hsl(25deg, 97%, 53%);
+}
+.card .btn {
+  background-color: hsl(25deg, 97%, 53%);
+  color: #fff;
+  width: 80%;
+  text-align: center;
+}
+.card .btn:active {
+  background-color: #fff;
+  color: hsl(25deg, 97%, 53%);
+}
+
+.card2 {
+  background-color: rgb(33, 40, 50);
+  width: 450px;
+  height: 450px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px 0;
+  position: absolute;
+}
+.card2 .card2__img {
+  width: 150px;
+}
+.card2 .card2__score {
+  color: hsl(25deg, 97%, 53%);
+  background-color: rgb(40, 46, 54);
+  padding: 15px;
+  border-radius: 40px;
+}
+.card2 .card2__title {
+  color: #fff;
+}
+.card2 .card2__text {
+  color: rgb(106, 113, 123);
+  width: 70%;
+  text-align: center;
+}
+
+.z {
+  z-index: 4;
+}
+
+/*# sourceMappingURL=app.css.map */

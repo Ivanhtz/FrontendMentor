@@ -1,0 +1,126 @@
+@use "../base/tools" as t;
+@use "../base/variables" as v;
+@use "../mixins/mixins" as m;
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background-color: rgb(33, 40, 50);
+  width: 450px;
+  height: 450px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px 0;
+  z-index: 2;
+
+  .icono {
+    width: 80%;
+  }
+
+  .card__icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(40, 46, 54);
+    padding: 10px;
+  }
+
+  .card__title {
+    color: v.$white;
+    width: 80%;
+  }
+
+  .card__paragraph {
+    color: rgb(106, 113, 123);
+    width: 80%;
+  }
+
+  .card__score {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 85%;
+
+    .score {
+      width: 60px;
+      height: 60px;
+      background-color: rgb(40, 46, 54);
+      color: rgb(106, 113, 123);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+
+      &:hover {
+        background-color: v.$grey;
+        color: v.$white;
+        cursor: pointer;
+      }
+
+      &:active {
+        background-color: v.$Orange;
+      }
+    }
+  }
+
+  .btn {
+    background-color: v.$Orange;
+    color: v.$white;
+    width: 80%;
+    text-align: center;
+
+    &:active {
+      background-color: v.$white;
+      color: v.$Orange;
+    }
+  }
+}
+
+.card2 {
+  background-color: rgb(33, 40, 50);
+  width: 450px;
+  height: 450px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px 0;
+  position: absolute;
+
+  .card2__img {
+    width: 150px;
+  }
+
+  .card2__score {
+    color: v.$Orange;
+    background-color: rgb(40, 46, 54);
+    padding: 15px;
+    border-radius: 40px;
+  }
+
+  .card2__title {
+    color: v.$white;
+  }
+
+  .card2__text {
+    color: rgb(106, 113, 123);
+    width: 70%;
+    text-align: center;
+  }
+}
+
+.z {
+  z-index: 4;
+}
